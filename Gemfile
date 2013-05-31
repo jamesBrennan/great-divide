@@ -2,4 +2,4 @@
 source "https://rubygems.org"
 
 gem 'middleman'
-gem 'slim'
+gem 'slim', '~>1.3.7'

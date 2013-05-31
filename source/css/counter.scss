@@ -1,0 +1,51 @@
+.counter {
+  width: 960px;
+  margin: 0 auto;
+
+  section {
+    //outline: solid gray 1px;
+  }
+
+  header {
+    margin: 30px 0;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  section {
+    display: block;
+
+    h1 {
+      line-height: 180px;
+    }
+    h2 {
+      font-size: 70px;
+      line-height: 80px;
+    }
+    h3 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &.money h1 {
+      font-size: 120px;
+      font-family: 'PT Mono', sans-serif;
+    }
+
+    &.death {
+      h1 {
+        font-size: 200px;
+        font-family: 'PT Mono', sans-serif;
+      }
+      padding-bottom: 30px;
+    }
+  }
+}
+
+#resizer {
+  visibility: hidden;
+}
