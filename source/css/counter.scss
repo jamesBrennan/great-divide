@@ -1,3 +1,14 @@
+.wf-loading * {
+  visibility: hidden;
+}
+
+.wf-active h1 {
+}
+
+body {
+  background-color: #e7e975;
+}
+
 .counter {
   width: 960px;
   margin: 0 auto;
@@ -6,42 +17,115 @@
     //outline: solid gray 1px;
   }
 
+  table {
+    margin: 0 auto;
+  }
+
   header {
-    margin: 30px 0;
+    margin: 5px auto;
+    text-align: center;
+    h1 {
+      font-size: 50px;
+      line-height: 60px;
+      color: #7d7f3c;
+    }
   }
 
   h1, h2, h3 {
-    text-align: center;
     margin: 0;
     font-family: 'Oswald', sans-serif;
   }
 
   section {
     display: block;
-
+    font-family: "source-code-pro", sans-serif;
     h1 {
       line-height: 180px;
+      font-family: "source-code-pro", sans-serif;
     }
     h2 {
-      font-size: 70px;
+      font-size: 90px;
       line-height: 80px;
+      color: #494b24;
+      &.children {
+        font-size: 93px;
+        //color: #7f1916;
+      }
     }
     h3 {
-      font-size: 40px;
+      font-size: 50px;
       line-height: 50px;
     }
 
-    &.money h1 {
-      font-size: 120px;
-      font-family: 'PT Mono', sans-serif;
+    &.money {
+      font-family: 'Oswald', sans-serif;
+      table td {
+        vertical-align: top;
+      }
+      .and-the {
+        font-size: 53px;
+        line-height: 65px;
+        min-width: 385px;
+        color: #7d7f3c;
+      }
+      .one-hundred {
+        font-size: 192px;
+        padding: 0 0 0 20px;
+        line-height: 184px;
+        font-family: 'Oswald', sans-serif;
+      }
+      .richest {
+        font-size: 122px;
+        line-height: 109px;
+        vertical-align: center;
+      }
+      .worlds, .richest, .one-hundred {
+        color: #494b24;
+      }
+      .people-in-the-world {
+        font-size: 60px;
+        line-height: 50px;
+      }
+      .have-aquired {
+        line-height: 63px;
+        font-size: 53px;
+        color: #7d7f3c;
+      }
+      h1 {
+        display: block;
+        overflow: visible;
+        font-size: 150px;
+        line-height: 160px;
+        padding-right: 70px;
+        color: #7f1916;
+      }
     }
 
     &.death {
       h1 {
-        font-size: 200px;
-        font-family: 'PT Mono', sans-serif;
+        min-width: 347px;
+        font-size: 230px;
+        text-align: center;
+        font-family: "source-code-pro", sans-serif;
       }
-      padding-bottom: 30px;
+      #death {
+        color: #7f1916;
+      }
+      .children {
+
+      }
+      .has {
+        color: #7d7f3c;
+      }
+      .verb {
+        padding-left: 2px;
+      }
+      .from-causes {
+        color: #7d7f3c;
+      }
+      .poverty {
+        color: #5b5d2b;
+      }
     }
   }
 }

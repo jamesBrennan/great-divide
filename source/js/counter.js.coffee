@@ -14,13 +14,20 @@ window.Counter = () ->
   drawDeath: (seconds) ->
     number_dead = @calculateDeath(seconds)
     $('#death').html number_dead
-    $('.children').html @deathGramar(number_dead)
+    grammar = @deathGrammar(number_dead)
+    $('.children').html grammar.noun
+    $('.has').html grammar.verb
 
   drawMoney: (seconds) ->
     $('#money').html @calculateMoney(seconds)
 
-  deathGramar: (number_dead) ->
-    if number_dead == 1 then 'child has' else 'children have'
+  deathGrammar: (number_dead) ->
+    if number_dead == 1
+      noun: 'CHILD'
+      verb: 'HAS'
+    else
+      noun: 'CHILDREN'
+      verb: 'HAVE'
 
   draw: () ->
     seconds_elapsed = (new Date().getTime() - @LOAD_TIME) / 1000.0

@@ -1,22 +1,38 @@
 section.counter
   header
-    h1 Since You Have Loaded This Page
+    h1.since-you-have-loaded SINCE YOU HAVE LOADED THIS PAGE
 
   section.death
-    h1
-      |
-      #death
-    .shadow
-    h2 <span class='children'></span> died
-    h3 from causes related to poverty
+    table
+      tr
+        td rowspan='3'
+          h1
+            |
+            #death
+      tr
+        td
+          H2.children
+      tr
+        td
+          H2.verb <span class='has'></span> DIED
+    table
+      tr
+        td
+          H3.from-causes FROM CAUSES RELATED TO <span class='poverty'>POVERTY</span>
 
-  h3 - AND -
 
   section.money
-    h1
-      | $
-      span#money
-    .shadow
-    h2 has been aquired
-    h3 by the 100 richest people in the world
-
+    table
+      tr
+        td.and-the WHILE THE <span class='worlds'>WORLD'S</span>
+        td.one-hundred rowspan='2' 100
+      tr
+        td.richest RICHEST
+      tr
+        td.have-aquired colspan='2' HAVE GROWN THIS MUCH RICHER
+    table
+      tr.count
+        td
+          h1
+            | $
+            span#money
