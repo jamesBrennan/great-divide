@@ -13,19 +13,27 @@
         return (seconds * this.INCOME_PER_SECOND).formatMoney(0, '.', ',');
       },
       drawDeath: function(seconds) {
-        var number_dead;
+        var grammar, number_dead;
         number_dead = this.calculateDeath(seconds);
         $('#death').html(number_dead);
-        return $('.children').html(this.deathGramar(number_dead));
+        grammar = this.deathGrammar(number_dead);
+        $('.children').html(grammar.noun);
+        return $('.has').html(grammar.verb);
       },
       drawMoney: function(seconds) {
         return $('#money').html(this.calculateMoney(seconds));
       },
-      deathGramar: function(number_dead) {
+      deathGrammar: function(number_dead) {
         if (number_dead === 1) {
-          return 'child has';
+          return {
+            noun: 'CHILD',
+            verb: 'HAS'
+          };
         } else {
-          return 'children have';
+          return {
+            noun: 'CHILDREN',
+            verb: 'HAVE'
+          };
         }
       },
       draw: function() {

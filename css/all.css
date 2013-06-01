@@ -803,44 +803,119 @@ textarea {
     }
 }
 /* line 1, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+.wf-loading * {
+  visibility: hidden; }
+
+/* line 8, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+body {
+  background-color: #e7e975; }
+
+/* line 12, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
 .counter {
   width: 960px;
   margin: 0 auto; }
-  /* line 9, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+  /* line 20, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+  .counter table {
+    margin: 0 auto; }
+  /* line 24, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
   .counter header {
-    margin: 30px 0; }
-  /* line 13, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    margin: 5px auto;
+    text-align: center; }
+    /* line 27, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    .counter header h1 {
+      font-size: 50px;
+      line-height: 60px;
+      color: #7d7f3c; }
+  /* line 34, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
   .counter h1, .counter h2, .counter h3 {
-    text-align: center;
     margin: 0;
     font-family: 'Oswald', sans-serif; }
-  /* line 19, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+  /* line 39, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
   .counter section {
-    display: block; }
-    /* line 22, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    display: block;
+    font-family: "source-code-pro", sans-serif; }
+    /* line 42, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
     .counter section h1 {
-      line-height: 180px; }
-    /* line 25, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      line-height: 180px;
+      font-family: "source-code-pro", sans-serif; }
+    /* line 46, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
     .counter section h2 {
-      font-size: 70px;
-      line-height: 80px; }
-    /* line 29, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      font-size: 90px;
+      line-height: 80px;
+      color: #494b24; }
+      /* line 50, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section h2.children {
+        font-size: 93px; }
+    /* line 55, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
     .counter section h3 {
-      font-size: 40px;
+      font-size: 50px;
       line-height: 50px; }
-    /* line 34, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
-    .counter section.money h1 {
-      font-size: 120px;
-      font-family: 'PT Mono', sans-serif; }
-    /* line 39, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
-    .counter section.death {
-      padding-bottom: 30px; }
-      /* line 40, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
-      .counter section.death h1 {
-        font-size: 200px;
-        font-family: 'PT Mono', sans-serif; }
+    /* line 60, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    .counter section.money {
+      font-family: 'Oswald', sans-serif; }
+      /* line 62, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section.money table td {
+        vertical-align: top; }
+      /* line 65, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section.money .and-the {
+        font-size: 53px;
+        line-height: 65px;
+        min-width: 385px;
+        color: #7d7f3c; }
+      /* line 71, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section.money .one-hundred {
+        font-size: 192px;
+        padding: 0 0 0 20px;
+        line-height: 184px;
+        font-family: 'Oswald', sans-serif; }
+      /* line 77, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section.money .richest {
+        font-size: 122px;
+        line-height: 109px;
+        vertical-align: center; }
+      /* line 82, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section.money .worlds, .counter section.money .richest, .counter section.money .one-hundred {
+        color: #494b24; }
+      /* line 85, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section.money .people-in-the-world {
+        font-size: 60px;
+        line-height: 50px; }
+      /* line 89, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section.money .have-aquired {
+        line-height: 63px;
+        font-size: 53px;
+        color: #7d7f3c; }
+      /* line 94, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+      .counter section.money h1 {
+        display: block;
+        overflow: visible;
+        font-size: 150px;
+        line-height: 160px;
+        padding-right: 70px;
+        color: #7f1916; }
+    /* line 105, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    .counter section.death h1 {
+      min-width: 347px;
+      font-size: 230px;
+      text-align: center;
+      font-family: "source-code-pro", sans-serif; }
+    /* line 111, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    .counter section.death #death {
+      color: #7f1916; }
+    /* line 117, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    .counter section.death .has {
+      color: #7d7f3c; }
+    /* line 120, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    .counter section.death .verb {
+      padding-left: 2px; }
+    /* line 123, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    .counter section.death .from-causes {
+      color: #7d7f3c; }
+    /* line 126, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+    .counter section.death .poverty {
+      color: #5b5d2b; }
 
-/* line 49, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
+/* line 133, /Users/jamesbrennan/development/projects/great-divide/source/css/counter.scss */
 #resizer {
   visibility: hidden; }
 /*
