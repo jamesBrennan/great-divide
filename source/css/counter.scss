@@ -6,16 +6,12 @@
 }
 
 body {
-  background-color: #e7e975;
+  background-color: #fff;
 }
 
 .counter {
   width: 960px;
   margin: 0 auto;
-
-  section {
-    //outline: solid gray 1px;
-  }
 
   table {
     margin: 0 auto;
@@ -27,7 +23,7 @@ body {
     h1 {
       font-size: 50px;
       line-height: 60px;
-      color: #7d7f3c;
+      color: #666;
     }
   }
 
@@ -46,10 +42,9 @@ body {
     h2 {
       font-size: 90px;
       line-height: 80px;
-      color: #494b24;
+      color: #333;
       &.children {
         font-size: 93px;
-        //color: #7f1916;
       }
     }
     h3 {
@@ -124,7 +119,7 @@ body {
         color: #7d7f3c;
       }
       .poverty {
-        color: #5b5d2b;
+        color: #333;
       }
     }
   }
